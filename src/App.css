@@ -52,10 +52,10 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: minmax(60px, auto);
 }
-.btns button{
-    padding: 8px;
+.btns button,.btns-generate button
+{
+    padding: 15px;
     margin: 5px;
-    background-color: #262834;
     color: #e3e3e3;
     border: none;
     cursor: pointer;
@@ -66,16 +66,25 @@ h1{
     -o-border-radius: 4px;
     font-weight: 500;
 }
-.btns button.btn{
+
+.btns button
+{
+    padding: 8px;
+    margin: 5px;
+    background-color: #262834;
+
+}
+.btns button.btn,
+.btns-generate button{
     background-color: #56cbdb;
     color: #262834;
     font-weight: bold;
 }
-.btns button:first-of-type{
+.btns-generate button:first-of-type{
     grid-column: 1/1;
     grid-row: 1;
 }
-.btns button:last-of-type{
+.btns-generate button:last-of-type{
     grid-column: 2/4;
     grid-row: 1;
 }
